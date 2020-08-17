@@ -26,13 +26,13 @@ He likes interdisciplinarity. He enjoys when people are motivated. As being a te
 
 ## education and positions
 
-### present
+#### present
 * PhD Student in Mathematics at the [University of Ferrara](http://www.unife.it) and the [University of Parma](http://www.unipr.it) under the supervision of Prof. [Guido SCIAVICCO](https://sites.google.com/unife.it/guido/)
 * Member of the [Applied Computational Logic and Artificial Intelligence Laboratory](https://sites.google.com/unife.it/aclai-lab) (ACLAI Lab.) of the Department of Mathematics and Computer Science at the University of Ferrara
 * Member of the [Formal Verification, Logic, Automata, and Synthesis](https://overlay.uniud.it/) (OVERLAY) research group
 * Member of the [Doctoral Students and PhDs Association in Italy](http://www.dottorato.it) (*Associazione Dottorandi e Dottori di Ricerca in Italia*, in italian)
 
-### past
+#### past
 * MSc Degree in Computer Science with full marks at the [University of Udine](http://www.uniud.it)
 	* Thesis: [Multiple Formulas and Multiple Models Finite Interval-based Model Checking](assets/pdf/theses/mmmc.pdf)
     * Supervisors: Prof. [Dario DELLA MONICA](https://users.dimi.uniud.it/~dario.dellamonica/), Prof. [Angelo MONTANARI](https://users.dimi.uniud.it/~angelo.montanari/index.php), and Prof. [Guido SCIAVICCO](https://sites.google.com/unife.it/guido/)
@@ -43,6 +43,7 @@ He likes interdisciplinarity. He enjoys when people are motivated. As being a te
 * Student Member of the Quality Assurance Commission (*Commissione Assicurazione Qualità*, in italian) during the 2018/2019 academic year at the [University of Udine](http://www.uniud.it)
 * Student Member of the Addressing Committee for periodic consultations with the labour market (*Comitato di indirizzamento per le consultazioni periodiche con il mondo del lavoro*, in italian) during the 2018/2019 academic year at the [University of Udine](http://www.uniud.it)
 
+---
 <!---
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 

@@ -2,10 +2,9 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+<!--- description: Materials for courses you taught. Replace this text with your description. --->
 nav: true
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
-
-Organize your courses by years, topics, or universities, however you like!
+* **Fall 2019**: Teaching Assistant in [Algorithms and Data Structures](http://www.unife.it/scienze/informatica/insegnamenti/algoritmi-strutture-dati), Computer Science Bachelor Degree, University of Ferrara
+* **Spring 2020**: Teaching Assistant in [Databases and Laboratory](http://www.unife.it/scienze/informatica/insegnamenti/basi-dati-1-laboratorio), Computer Science Bachelor Degree, University of Ferrara

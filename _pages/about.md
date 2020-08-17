@@ -2,22 +2,21 @@
 layout: about
 title: about
 permalink: /
-description: <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
+description: <a href="#">Department of Mathematics and Computer Science</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right
-  image: prof_pic.jpg
-  address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  image: eduard.jpg
+  <!---address: >
+    <p>Scientific-Technological Campus</p>
+    <p>Via Saragat, 1, Ferrara, 44122, Italy</p>
+    <p>Building A, Room 135 (PhD Students/Postdocs)</p>--->
 
 news: true
 social: true
 ---
 
-## About
-
+## about
 
 He studies how to reduce the gap between Artificial Intelligence (AI) and Machine Learning (ML). In particular, he is interested in (Interval) Temporal Symbolic Learning where the induced theory is described by formulas of Temporal Logics.
 
@@ -25,20 +24,20 @@ He likes interdisciplinarity. He enjoys when people are motivated. As being a te
 
 ---
 
-## Education and Positions
+## education and positions
 
-### Present
+### present
 * PhD Student in Mathematics at the [University of Ferrara](http://www.unife.it) and the [University of Parma](http://www.unipr.it) under the supervision of Prof. [Guido SCIAVICCO](https://sites.google.com/unife.it/guido/)
 * Member of the [Applied Computational Logic and Artificial Intelligence Laboratory](https://sites.google.com/unife.it/aclai-lab) (ACLAI Lab.) of the Department of Mathematics and Computer Science at the University of Ferrara
 * Member of the [Formal Verification, Logic, Automata, and Synthesis](https://overlay.uniud.it/) (OVERLAY) research group
 * Member of the [Doctoral Students and PhDs Association in Italy](http://www.dottorato.it) (*Associazione Dottorandi e Dottori di Ricerca in Italia*, in italian)
 
-### Past
+### past
 * MSc Degree in Computer Science with full marks at the [University of Udine](http://www.uniud.it)
-	* Thesis: [Multiple Formulas and Multiple Models Finite Interval-based Model Checking](https://eduardstan.github.io/theses/mmmc.pdf)
+	* Thesis: [Multiple Formulas and Multiple Models Finite Interval-based Model Checking](assets/pdf/theses/mmmc.pdf)
     * Supervisors: Prof. [Dario DELLA MONICA](https://users.dimi.uniud.it/~dario.dellamonica/), Prof. [Angelo MONTANARI](https://users.dimi.uniud.it/~angelo.montanari/index.php), and Prof. [Guido SCIAVICCO](https://sites.google.com/unife.it/guido/)
 * BSc Degree in Computer Science with full marks at the [University of Ferrara](http://www.unife.it)
-    * Thesis: [Implementation of a Tableau-based Satisfiability Checker for the Logic HS<sub>3</sub>](https://eduardstan.github.io/theses/hs3.pdf)
+    * Thesis: [Implementation of a Tableau-based Satisfiability Checker for the Logic HS<sub>3</sub>](assets/pdf/theses/hs3.pdf)
     * Supervisor: Prof. [Guido SCIAVICCO](https://sites.google.com/unife.it/guido/)
 * 5-months Erasmus<sup>+</sup> European Program in Computer Engineering at the [University of Murcia](https://www.um.es/)
 * Student Member of the Quality Assurance Commission (*Commissione Assicurazione Qualità*, in italian) during the 2018/2019 academic year at the [University of Udine](http://www.uniud.it)

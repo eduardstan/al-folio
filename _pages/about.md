@@ -10,10 +10,7 @@ description: Department of Mathematics and Computer Science<br>
 profile:
   align: right
   image: eduard.jpg
-  address: >
-    <p>Scientific-Technological Campus</p>
-    <p>Via Saragat, 1, Ferrara, 44122, Italy</p>
-    <p>Building A, Room 135 (PhD Students/Postdocs)
+  address:
 
 news: true
 social: true

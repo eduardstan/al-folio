@@ -30,6 +30,15 @@ _styles: >
   }
 ---
 
+# Table of Contents
+1. [Introduction](#introduction)
+2. [First Order Logic](#first-order-logic)
+3. [Propositional Logic](#propositional-logic)
+4. [Modal Logic](#modal-logic)
+5. [Temporal Logic](#temporal-logic)
+6. [Interval Temporal Logic](#interval-temporal-logic)
+7. [Conclusions](#conclusions)
+
 ## Introduction
 
 Every formal science needs a language to be able for expressing results and communicate information with others in a comprehensible way. Logic’s purpose is to study this formal representation without ambiguity in terms of a formal language, which provides to humans those crucial mathematical mechanisms to securely control reasonings. It is obvious that there is no universal logical language to represent every science. <!---Artificial Intelligence (AI) is among the most representative witnesses that uses logic to, e.g., represent knowledge.--->

@@ -2,22 +2,24 @@
 layout: about
 title: about
 permalink: /
-description: <a href="#">Department of Mathematics and Computer Science</a>. Address. Contacts. Moto. Etc.
+description: Department of Mathematics and Computer Science<br> 
+  University of Ferrara, Italy &bull; <a href="mailto:ioneleduard.stan@unife.it">ioneleduard.stan@unife.it</a><br>
+  Department of Mathematical, Physical, and Computer Sciences<br> 
+  University of Parma, Italy &bull; <a href="mailto:ioneleduard.stan@unipr.it">ioneleduard.stan@unipr.it</a>
 
 profile:
   align: right
   image: eduard.jpg
-  <!---address: >
+  address: >
     <p>Scientific-Technological Campus</p>
     <p>Via Saragat, 1, Ferrara, 44122, Italy</p>
-    <p>Building A, Room 135 (PhD Students/Postdocs)</p>--->
+    <p>Building A, Room 135 (PhD Students/Postdocs)
 
 news: true
 social: true
 ---
 
-## about
-
+--- 
 He studies how to reduce the gap between Artificial Intelligence (AI) and Machine Learning (ML). In particular, he is interested in (Interval) Temporal Symbolic Learning where the induced theory is described by formulas of Temporal Logics.
 
 He likes interdisciplinarity. He enjoys when people are motivated. As being a team player, he likes to share with others and to work with people that come from different research areas. Moreover, he loves animals (especially dogs) and snowboarding. 

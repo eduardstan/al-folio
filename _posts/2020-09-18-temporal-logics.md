@@ -41,9 +41,9 @@ _styles: >
 
 ## Introduction
 
-Every formal science needs a language to be able for expressing results and communicate information with others in a comprehensible way. Logic’s purpose is to study this formal representation without ambiguity in terms of a formal language providing to humans those crucial mathematical mechanisms to securely control reasonings. It is obvious that there is no universal logical language to represent every science. <!---Artificial Intelligence (AI) is among the most representative witnesses that uses logic to, e.g., represent knowledge.--->
+Every formal science needs a language to be able for expressing results and communicate information with others in a comprehensible way. Logic’s purpose is to study this formal representation without ambiguity in terms of a formal language providing to humans those crucial mathematical mechanisms to securely control reasonings. It is obvious that there is no universal logical language to represent every science.
 
-The goal is to present a journey through a possible set of formal languages (actively) used in Artificial Intelligence (AI). In this presentation, our purpose is 
+The goal is to present a journey through a possible set of formal languages (actively) used in Artificial Intelligence (AI). 
 
 ## First Order Logic
 

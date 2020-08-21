@@ -41,9 +41,9 @@ _styles: >
 
 ## Introduction
 
-Every formal science needs a language to be able for expressing results and communicate information with others in a comprehensible way. Logic’s purpose is to study this formal representation without ambiguity in terms of a formal language, which provides to humans those crucial mathematical mechanisms to securely control reasonings. It is obvious that there is no universal logical language to represent every science. <!---Artificial Intelligence (AI) is among the most representative witnesses that uses logic to, e.g., represent knowledge.--->
+Every formal science needs a language to be able for expressing results and communicate information with others in a comprehensible way. Logic’s purpose is to study this formal representation without ambiguity in terms of a formal language providing to humans those crucial mathematical mechanisms to securely control reasonings. It is obvious that there is no universal logical language to represent every science. <!---Artificial Intelligence (AI) is among the most representative witnesses that uses logic to, e.g., represent knowledge.--->
 
-The goal is to present a journey through a possible set of formal languages (actively) used in Artificial Intelligence (AI).
+The goal is to present a journey through a possible set of formal languages (actively) used in Artificial Intelligence (AI). In this presentation, our purpose is 
 
 ## First Order Logic
 
@@ -102,7 +102,7 @@ Given an interpretation $\mathcal{I}$ with its state $\sigma$, we are able to de
 
 We say that a formula $\varphi$ is *satisfiable* if there exists a true interpretation $\mathcal{I}$ along with its state $\sigma$; in this case, $\mathcal{I}$ is called *model* $M$ and we write $\mathcal{I},\sigma \models \varphi$ or $M,\sigma \models \varphi$. If $M,\sigma \models \varphi$ holds, we say that $\varphi$ computes to $\top$ in the model $M$ with respect to its state $\sigma$. A formula $\varphi$ is *unsatisfiable*, denoted by $\not\models \varphi$, if there is no way to give a true interpretation over it. A formula $\varphi$ is a *tautology* (or *validity*) if every interpretation is a model or if $\neg \varphi$ is unsatisfiable. Moreover, two formulas $\varphi_1$ and $\varphi_2$ are said to be *semantically equivalent*, denoted by $\varphi_1 \equiv \varphi_2$, if and only if, for all interpretations $\mathcal{I}$, it turns out that $\mathcal{I}(\varphi_1) = \mathcal{I}(\varphi_2)$.
 
-In order to take a closer look to the inherent difficulty of $\mathsf{FOL}$, we choose the SAT problem as emblematic. It turns out that the SAT problem gives us a good measure of the complexity of a given problem. There are good news and bad news: the SAT problem for the $\mathsf{FOL}$ is not decidable <d-cite key="sisper_computation"></d-cite>. On the other hand, the good news are that several problems can be transformed into SAT problems. For instance, the *deduction problem*, that is given the premises $\varphi_1 \land \varphi_2 \land \ldots \land \varphi_n$ the goal is to conclude the consequent $\varphi_{n+1}$, can be translated into a SAT problem verifying if the formula $\varphi \equiv \varphi_1 \land \varphi_2 \land \ldots \land \varphi_n \land \neg \varphi_{n+1}$ has a true interpretation and if it does, clearly, we cannot conclude $\varphi_{n+1}$ (from the premises).
+In order to take a closer look to the inherent difficulty of $\mathsf{FOL}$, we choose the *satisfiability*<d-cite key="Cook:1971:CTP:800157.805047,sisper_computation"></d-cite> (SAT, for short) problem as emblematic. It turns out that the SAT problem gives us a good measure of the complexity of a given problem. There are good news and bad news: the SAT problem for the $\mathsf{FOL}$ is not decidable <d-cite key="sisper_computation"></d-cite>. On the other hand, the good news are that several problems can be transformed into SAT problems. For instance, the *deduction problem*, that is given the premises $\varphi_1,\varphi_2,\ldots,\varphi_n$ the goal is to conclude the consequent $\varphi_{n+1}$, can be translated into a SAT problem: if the formula $\varphi \equiv \varphi_1 \land \varphi_2 \land \ldots \land \varphi_n \land \neg \varphi_{n+1}$ has a true interpretation, then, clearly, we cannot conclude $\varphi_{n+1}$ (from the premises).
 
 ## Propositional Logic
 
@@ -284,14 +284,14 @@ $$\mathsf{PL} \prec \mathsf{ML} \prec \mathsf{LTL} \prec \mathsf{HS}_3 \prec \ma
 </div>
 
 <div class="caption">
-    Representation of the presented logics.
+    Representation of the presented logics in terms of expressive power and computational power marking the decidability border.
 </div>
 
 ## Conclusions
 
 In this presentation, we have made a journey through some of the (classical and non-classical) logics used in Artificial Intelligence focusing on their SAT problem. Some of these logics are well-known in the literature (e.g., $\mathsf{PL}$, $\mathsf{LTL}$), but others, such as $\mathsf{HS}$, are less studied. One of the goals of this presentation was to give a quick overview of some of these logics without going to deep with the mathematical details.
 
-The satisfiability problem of logics is among the most studied problems in theoretical computer science. Another well-studied problem is the *Model Checking* (MC, for short) problem and a great effort has been made in the last decades in addressing such problem, which is beyond the scope of this presentation. The reader can refer to <d-cite key="Clarke:2000:MC:332656"></d-cite> for a systematic and organic presentation of the MC problem.
+The satisfiability problem of logics is among the most studied problems in theoretical computer science. Another well-studied problem is the *Model Checking*<d-cite key="Clarke:2000:MC:332656"></d-cite> (MC, for short) problem and a great effort has been made in the last decades in addressing such problem, but the study of such problem is beyond the scope of this presentation. 
 
 
 

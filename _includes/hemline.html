@@ -18,7 +18,14 @@
 {% endif %}
 
 {% if site.enable_mathjax %}
-<!-- Load KaTeX -->
+<!-- Load MathJax -->
+<script>
+MathJax = {
+  tex: {
+    tags: 'ams'
+  }
+};
+</script>
 <script src="/assets/js/mathjax-config.js" defer></script>
 <script type="text/javascript" id="MathJax-script" defer
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">

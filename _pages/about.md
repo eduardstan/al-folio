@@ -29,10 +29,10 @@ He likes interdisciplinarity. He enjoys when people are motivated. As being a te
 	* Research: (Interval) Temporal Symbolic Learning
 	* Supervisor: Prof. [Guido SCIAVICCO](https://sites.google.com/unife.it/guido/)
 	* Addendum: The PhD Degree is a joint program between the [University of Ferrara](http://www.unife.it), [University of Modena-Reggio Emilia](http://www.unimore.it) and [University of Parma](http://www.unipr.it)
-* Member of the [Applied Computational Logic and Artificial Intelligence Laboratory](https://sites.google.com/unife.it/aclai-lab) (ACLAI Lab.) of the Department of Mathematics and Computer Science at the University of Ferrara
+* Member of the [Applied Computational Logic and Artificial Intelligence Laboratory](https://sites.google.com/unife.it/aclai-lab) (ACLAI Lab.) of the Department of Mathematics and Computer Science at the [University of Ferrara](http://www.unife.it)
 * Member of the [Formal Verification, Logic, Automata, and Synthesis](https://overlay.uniud.it/) (OVERLAY) research group
 * Member of the [Doctoral Students and PhDs Association in Italy](http://www.dottorato.it) (*Associazione Dottorandi e Dottori di Ricerca in Italia*, in italian)
-* PhD Students' Representative of the Department of Mathematics and Computer Science at the University of Ferrara
+* PhD Students' Representative of the Department of Mathematics and Computer Science at the [University of Ferrara](http://www.unife.it)
 
 #### past
 * MSc Degree in Computer Science at the [University of Udine](http://www.uniud.it)
@@ -44,8 +44,8 @@ He likes interdisciplinarity. He enjoys when people are motivated. As being a te
 	* Supervisor: Prof. [Guido SCIAVICCO](https://sites.google.com/unife.it/guido/)
 	* Score: 110/110 *cum laude*
 * 5-months Erasmus<sup>+</sup> European Program in Computer Engineering at the [University of Murcia](https://www.um.es/)
-* Student Member of the Quality Assurance Commission (*Commissione Assicurazione Qualità*, in italian) during the 2018/2019 academic year at the [University of Udine](http://www.uniud.it)
-* Student Member of the Addressing Committee for periodic consultations with the labour market (*Comitato di indirizzamento per le consultazioni periodiche con il mondo del lavoro*, in italian) during the 2018/2019 academic year at the [University of Udine](http://www.uniud.it)
+* Student Member of the Quality Assurance Commission (*Commissione Assicurazione Qualità*, in italian) at the [University of Udine](http://www.uniud.it)
+* Student Member of the Addressing Committee for periodic consultations with the labour market (*Comitato di indirizzamento per le consultazioni periodiche con il mondo del lavoro*, in italian) at the [University of Udine](http://www.uniud.it)
 
 ---
 <!---

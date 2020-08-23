@@ -25,12 +25,14 @@ He likes interdisciplinarity. He enjoys when people are motivated. As being a te
 ## education and positions
 
 #### present
-* PhD Student in Mathematics at the [University of Ferrara](http://www.unife.it) and the [University of Parma](http://www.unipr.it)
+* PhD Student in Mathematics at the [University of Parma](http://www.unipr.it)
 	* Research: (Interval) Temporal Symbolic Learning
 	* Supervisor: Prof. [Guido SCIAVICCO](https://sites.google.com/unife.it/guido/)
+	* Addendum: The PhD Degree is a joint program between the [University of Ferrara](http://www.unife.it), [University of Modena-Reggio Emilia](http://www.unimore.it) and [University of Parma](http://www.unipr.it)
 * Member of the [Applied Computational Logic and Artificial Intelligence Laboratory](https://sites.google.com/unife.it/aclai-lab) (ACLAI Lab.) of the Department of Mathematics and Computer Science at the University of Ferrara
 * Member of the [Formal Verification, Logic, Automata, and Synthesis](https://overlay.uniud.it/) (OVERLAY) research group
 * Member of the [Doctoral Students and PhDs Association in Italy](http://www.dottorato.it) (*Associazione Dottorandi e Dottori di Ricerca in Italia*, in italian)
+* PhD Students' Representative of the Department of Mathematics and Computer Science at the University of Ferrara
 
 #### past
 * MSc Degree in Computer Science at the [University of Udine](http://www.uniud.it)

@@ -111,6 +111,7 @@ plugins:
   - jekyll-paginate-v2
   - jekyll/scholar
   - jemoji
+  - jekyll-seo-tag
   # - bootstrap
   # - material-sass
 
@@ -152,6 +153,7 @@ enable_mansory:           true
 enable_progressbar:       true
 enable_tooltips:          true
 show_social_icons:        false
+enable_seo:               true
 
 # -----------------------------------------------------------------------------
 # Library versions

@@ -2,10 +2,11 @@
 layout: about
 title: about
 permalink: /
-description: Department of Mathematics and Computer Science<br> 
-  University of Ferrara, Italy &bull; <a href="mailto:ioneleduard.stan@unife.it">ioneleduard.stan@unife.it</a><br>
-  Department of Mathematical, Physical, and Computer Sciences<br> 
-  University of Parma, Italy &bull; <a href="mailto:ioneleduard.stan@unipr.it">ioneleduard.stan@unipr.it</a>
+description: >
+  • Department of Mathematics and Computer Science<br> 
+    University of Ferrara, Italy <a href="mailto:ioneleduard.stan@unife.it">ioneleduard.stan@unife.it</a><br>
+  • Department of Mathematical, Physical, and Computer Sciences<br> 
+    University of Parma, Italy <a href="mailto:ioneleduard.stan@unipr.it">ioneleduard.stan@unipr.it</a>
 
 profile:
   align: right

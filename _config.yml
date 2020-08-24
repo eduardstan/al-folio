@@ -5,7 +5,7 @@
 title: Eduard Ionel STAN
 email: ioneleduard.stan@unife.it
 secondary_email: ioneleduard.stan@unipr.it # secondary email
-description: Eduard's Personal Website # this means to ignore newlines until "url:" A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+description: Eduard's Personal Website
 footer_text: >
   <br>Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme using <a href="https://github.com/mathjax/MathJax">MathJax</a>.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.

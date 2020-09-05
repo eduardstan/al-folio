@@ -39,6 +39,7 @@ He likes interdisciplinarity. He enjoys when people are motivated. As being a te
 	* Thesis: [Multiple Formulas and Multiple Models Finite Interval-based Model Checking](assets/pdf/theses/mmmc.pdf)
 	* Supervisors: Prof. [Dario DELLA MONICA](https://users.dimi.uniud.it/~dario.dellamonica/), Prof. [Angelo MONTANARI](https://users.dimi.uniud.it/~angelo.montanari/index.php), and Prof. [Guido SCIAVICCO](https://sites.google.com/unife.it/guido/)
 	* Score: 110/110 *cum laude*
+	* Award: Best graduate of the year (1.000€)
 * BSc Degree in Computer Science at the [University of Ferrara](http://www.unife.it)
 	* Thesis: [Implementation of a Tableau-based Satisfiability Checker for the Logic HS<sub>3</sub>](assets/pdf/theses/hs3.pdf)
 	* Supervisor: Prof. [Guido SCIAVICCO](https://sites.google.com/unife.it/guido/)

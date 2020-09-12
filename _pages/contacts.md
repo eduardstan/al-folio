@@ -9,6 +9,7 @@ nav: true
 ---
 
 ## emails 
+* Personal: [stan.i.eduard@gmail.com](mailto:stan.i.eduard@gmail.com)
 * University of Ferrara: [ioneleduard.stan@unife.it](mailto:ioneleduard.stan@unife.it)
 * University of Parma: [ioneleduard.stan@unipr.it](mailto:ioneleduard.stan@unipr.it)
 
@@ -27,6 +28,7 @@ nav: true
 
 ## others
 
-* [Google Scholar](https://scholar.google.com/citations?user=k7uGe4AAAAAJ)
-* [LinkedIn](https://www.linkedin.com/in/edust/)
-
+* [Google Scholar](https://scholar.google.com/citations?user={{ site.scholar_userid }})
+* [LinkedIn](https://www.linkedin.com/in/{{ site.linkedin_username }})
+* [Skype](skype:{{ site.skype_username }})
+* [Telegram](https://t.me/{{ site.telegram_username }})

@@ -3,8 +3,8 @@
 # -----------------------------------------------------------------------------
 
 title: Eduard Ionel STAN
-email: ioneleduard.stan@unife.it
-secondary_email: ioneleduard.stan@unipr.it # secondary email
+email: stan.i.eduard@gmail.com
+#secondary_email: ioneleduard.stan@unipr.it # secondary email
 description: Eduard's Personal Website
 footer_text: >
   <br>Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme using <a href="https://github.com/mathjax/MathJax">MathJax</a>.
@@ -40,14 +40,15 @@ twitter_username: # your Twitter handle
 linkedin_username: edust # your LinkedIn user name
 scholar_userid: k7uGe4AAAAAJ # your Google Scholar ID
 orcid_id: # your ORCID ID
+skype_username: ffstsk # your Skype user name
+telegram_username: ffstsk # your Telegram user name
 medium_username: # your Medium username
 quora_username: # your Quora username
 publons_id: # your ID on Publons
 research_gate_profile: # your profile on ResearchGate
 blogger_url: # your blogger URL
 
-#contact_note: >
-#  You can even add a little note about which of these is the best way to reach you.
+contact_note: Contact via email for better reachability # You can even add a little note about which of these is the best way to reach you.
 
 google_analytics: UA-175560702-1 # out your google-analytics code
 
@@ -151,7 +152,7 @@ enable_mathjax:           true
 enable_mansory:           true
 enable_progressbar:       true
 enable_tooltips:          true
-show_social_icons:        false
+show_social_icons:        true
 enable_seo:               true
 
 # -----------------------------------------------------------------------------

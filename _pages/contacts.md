@@ -29,6 +29,7 @@ nav: true
 ## others
 
 * [Google Scholar](https://scholar.google.com/citations?user={{ site.scholar_userid }})
+* [ResearchGate](https://www.researchgate.net/profile/{{site.research_gate_profile}}/)
 * [LinkedIn](https://www.linkedin.com/in/{{ site.linkedin_username }})
 * [Skype](skype:{{ site.skype_username }})
 * [Telegram](https://t.me/{{ site.telegram_username }})

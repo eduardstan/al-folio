@@ -16,7 +16,7 @@ social: true
 ---
 
 --- 
-He studies how to reduce the gap between Artificial Intelligence (AI) and Machine Learning (ML). In particular, he is interested in (Interval) Temporal Symbolic Learning where the induced theory is described by formulas of Temporal Logics.
+He studies how to reduce the gap between Artificial Intelligence (AI) and Machine Learning (ML). In particular, Eduard developed a strong interest in interpretable ML and its mathematical aspects during his MSc Degree in Computer Science, and after graduation he decided to switch to Mathematics to study and to develop new methods where (Interval) Temporal Logics come in to play; the resulting theory is called (Interval) Temporal Symbolic Learning. 
 
 He likes interdisciplinarity. He enjoys when people are motivated. As being a team player, he likes to share with others and to work with people that come from different research areas. Moreover, he loves animals (especially dogs) and snowboarding. 
 

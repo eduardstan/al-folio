@@ -1,6 +1,27 @@
 ---
 ---
 
+@inproceedings{time20,
+	author		= "G. Sciavicco and I.E. Stan",
+	title		= "Knowledge Extraction with Interval Temporal Logic Decision Trees",
+	booktitle	= "Proceedings of the 27th International Symposium on Temporal Representation and Reasoning (TIME2020)",
+	pages 		= {9:1--9:16},
+  	series 	= {Leibniz International Proceedings in Informatics (LIPIcs)},
+  	ISBN 		= {978-3-95977-167-2},
+  	ISSN 		= {1868-8969},
+  	year 		= {2020},
+  	volume 	= {178},
+  	editor 	= {Emilio Mu{\~n}oz-Velasco and Ana Ozaki and Martin Theobald},
+  	publisher 	= {Schloss Dagstuhl--Leibniz-Zentrum f{\"u}r Informatik},
+	abstract	= {Multivariate temporal, or time, series classification is, in a way, the temporal generalization of (numeric) classification, as every instance is described by multiple time series instead of multiple values. Symbolic classification is the machine learning strategy to extract explicit knowledge from a data set, and the problem of symbolic classification of multivariate temporal series requires the design, implementation, and test of ad-hoc machine learning algorithms, such as, for example, algorithms for the extraction of temporal versions of decision trees. One of the most well-known algorithms for decision tree extraction from categorical data is Quinlan's ID3, which was later extended to deal with numerical attributes, resulting in an algorithm known as C4.5, and implemented in many open-sources data mining libraries, including the so-called Weka, which features an implementation of C4.5 called J48. ID3 was recently generalized to deal with temporal data in form of timelines, which can be seen as discrete (categorical) versions of multivariate time series, and such a generalization, based on the interval temporal logic HS, is known as Temporal ID3. In this paper we introduce Temporal C4.5, that allows the extraction of temporal decision trees from undiscretized multivariate time series, describe its implementation, called Temporal J48, and discuss the outcome of a set of experiments with the latter on a collection of public data sets, comparing the results with those obtained by other, classical, multivariate time series classification methods.},
+	URL 		= {https://drops.dagstuhl.de/opus/volltexte/2020/12977},
+  	URN 		= {urn:nbn:de:0030-drops-129776},
+  	doi 		= {10.4230/LIPIcs.TIME.2020.9},
+  	annote 	= {Keywords: Interval Temporal Logic, Decision Trees, Explainable AI, Time series},
+  	pdf		= {papers/2020/time2020.pdf},
+  	html		= {https://drops.dagstuhl.de/opus/volltexte/2020/12977/}
+}
+
 @inproceedings{overlay2020a,
 	author="E. Lucena-Sánchez and G. Sciavicco and I.E. Stan",
 	title="Symbolic Learning with Interval Temporal Logic: The Case of Regression",
@@ -15,14 +36,6 @@
 	Booktitle = "Accepted for publication on the Proceedings of the 2nd Workshop on Artificial Intelligence and Formal Verification, Logic, Automata, and Synthesis (OVERLAY2020)",
 	year={2020},
 	abstract={In this paper, we deal with the ultimately-periodic finite interval temporal logic model checking problem. The problem has been shown to be in PTIME for full Halpern and Shoham's interval temporal logic (HS for short) over finite models, as well as for the HS fragment featuring a modality for Allen relation \emph{meets} and metric constraints over non-sparse ultimately-periodic (finite) models, that is, over ultimately-periodic models whose representation is polynomial in their size. Here, we generalize the latter result to the case of sparse ultimately-periodic models.}
-}
-
-@inproceedings{time20,
-	author="G. Sciavicco and I.E. Stan",
-	title="Knowledge Extraction with Interval Temporal Logic Decision Trees",
-	booktitle="Accepted for publication on the Proceedings of the 27th International Symposium on Temporal Representation and Reasoning (TIME2020)",
-	year={2020},
-	abstract={Multivariate temporal, or time, series classification is, in a way, the temporal generalization of (numeric) classification, as every instance is described by multiple time series instead of multiple values. Symbolic classification is the machine learning strategy to extract explicit knowledge from a data set, and the problem of symbolic classification of multivariate temporal series requires the design, implementation, and test of ad-hoc machine learning algorithms, such as, for example, algorithms for the extraction of temporal versions of decision trees. One of the most well-known algorithms for decision tree extraction from categorical data is Quinlan's ID3, which was later extended to deal with numerical attributes, resulting in an algorithm known as C4.5, and implemented in many open-sources data mining libraries, including the so-called Weka, which features an implementation of C4.5 called J48. ID3 was recently generalized to deal with temporal data in form of timelines, which can be seen as discrete (categorical) versions of multivariate time series, and such a generalization, based on the interval temporal logic HS, is known as Temporal ID3. In this paper we introduce Temporal C4.5, that allows the extraction of temporal decision trees from undiscretized multivariate time series, describe its implementation, called Temporal J48, and discuss the outcome of a set of experiments with the latter on a collection of public data sets, comparing the results with those obtained by other, classical, multivariate time series classification methods.}
 }
 
 @inproceedings{ictcs20,
@@ -73,7 +86,8 @@ a plane flight. In this paper we argue how the recently introduced fuzzy general
 	author = "E. Muñoz-Velasco and M. Pelegrín and P. Sala and G. Sciavicco and I. E. Stan",
 	keywords = "Modal and temporal logic, (Un)Decidability, Complexity",
 	pdf={papers/2019/ai2019.pdf},
-	abstract={The primary characteristic of interval temporal logic is that intervals, rather than points, are taken as the primitive ontological entities. Given their generally bad computational behaviour, several techniques exist to produce decidable and computationally affordable temporal logics based on intervals. In this paper we take inspiration from Golumbic and Shamir's coarser interval algebras, which generalize the classical Allen's Interval Algebra, in order to define two previously unknown variants of Halpern and Shoham's logic (HS) based on coarser relations. We prove that, perhaps surprisingly, the satisfiability problem for the coarsest of the two variants, namely {HS$_3$}, not only is decidable, but PSPACE-complete in the finite/discrete case, and PSPACE-hard in any other case; besides proving its model-theoretic properties, we implement a tableau-based satisfiability checker for it, and test it against a systematically generated benchmark. Our results are strengthened by showing that not all coarser-than-Allen's relations are a guarantee of decidability, as we prove that the second variant, namely {HS$_7$}, remains undecidable in all interesting cases.}
+	abstract={The primary characteristic of interval temporal logic is that intervals, rather than points, are taken as the primitive ontological entities. Given their generally bad computational behaviour, several techniques exist to produce decidable and computationally affordable temporal logics based on intervals. In this paper we take inspiration from Golumbic and Shamir's coarser interval algebras, which generalize the classical Allen's Interval Algebra, in order to define two previously unknown variants of Halpern and Shoham's logic (HS) based on coarser relations. We prove that, perhaps surprisingly, the satisfiability problem for the coarsest of the two variants, namely {HS$_3$}, not only is decidable, but PSPACE-complete in the finite/discrete case, and PSPACE-hard in any other case; besides proving its model-theoretic properties, we implement a tableau-based satisfiability checker for it, and test it against a systematically generated benchmark. Our results are strengthened by showing that not all coarser-than-Allen's relations are a guarantee of decidability, as we prove that the second variant, namely {HS$_7$}, remains undecidable in all interesting cases.},
+	html={https://www.sciencedirect.com/science/article/abs/pii/S0004370218305964}
 }
 
 @InProceedings{10.1007/978-3-030-19570-0_50,
@@ -89,7 +103,8 @@ a plane flight. In this paper we argue how the recently introduced fuzzy general
 	isbn="978-3-030-19570-0",
 	url = "https://link.springer.com/chapter/10.1007/978-3-030-19570-0_50",
 	pdf={papers/2019/jelia2019.pdf},
-	abstract={Decision trees are simple, yet powerful, classification models used to classify categorical and numerical data, and, despite their simplicity, they are commonly used in operations research and management, as well as in knowledge mining. From a logical point of view, a decision tree can be seen as a structured set of logical rules written in propositional logic. Since knowledge mining is rapidly evolving towards temporal knowledge mining, and since in many cases temporal information is best described by interval temporal logics, propositional logic decision trees may evolve towards interval temporal logic decision trees. In this paper, we define the problem of interval temporal logic decision tree learning, and propose a solution that generalizes classical decision tree learning.}
+	abstract={Decision trees are simple, yet powerful, classification models used to classify categorical and numerical data, and, despite their simplicity, they are commonly used in operations research and management, as well as in knowledge mining. From a logical point of view, a decision tree can be seen as a structured set of logical rules written in propositional logic. Since knowledge mining is rapidly evolving towards temporal knowledge mining, and since in many cases temporal information is best described by interval temporal logics, propositional logic decision trees may evolve towards interval temporal logic decision trees. In this paper, we define the problem of interval temporal logic decision tree learning, and propose a solution that generalizes classical decision tree learning.},
+	html={https://link.springer.com/chapter/10.1007/978-3-030-19570-0_50}
 }
 
 @inproceedings{IWINAC19,
@@ -102,7 +117,8 @@ a plane flight. In this paper we argue how the recently introduced fuzzy general
 	pages="3-12",
 	url="https://link.springer.com/chapter/10.1007/978-3-030-19651-6_1",
 	pdf={papers/2019/iwinac2019.pdf},
-	abstract={Extracting rules from temporal series is a well-established temporal data mining technique. The current literature contains a number of different algorithms and experiments that allow one to abstract temporal series and, later, extract meaningful rules from them. In this paper, we approach this problem in a rather general way, without resorting, as many other methods, to expert knowledge and ad-hoc solutions. Our very simple temporal abstraction method allows us to transform time series into timelines, which can be then used for logical temporal rule extraction using an already existing temporal adaptation of the algorithm APRIORI. We have tested this approach on real data, obtaining promising results.}
+	abstract={Extracting rules from temporal series is a well-established temporal data mining technique. The current literature contains a number of different algorithms and experiments that allow one to abstract temporal series and, later, extract meaningful rules from them. In this paper, we approach this problem in a rather general way, without resorting, as many other methods, to expert knowledge and ad-hoc solutions. Our very simple temporal abstraction method allows us to transform time series into timelines, which can be then used for logical temporal rule extraction using an already existing temporal adaptation of the algorithm APRIORI. We have tested this approach on real data, obtaining promising results.},
+	html={https://link.springer.com/chapter/10.1007/978-3-030-19651-6_1}
 }
 
 @inproceedings{cilc17,

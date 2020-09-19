@@ -27,7 +27,7 @@ He likes interdisciplinarity. He enjoys when people are motivated. As being a te
 #### present
 * PhD Student in Mathematics at the [University of Parma](http://www.unipr.it)
 	* Research: (Interval) Temporal Symbolic Learning
-	* Supervisor: Prof. [Guido SCIAVICCO](https://sites.google.com/unife.it/guido/)
+	* Advisor: Prof. [Guido SCIAVICCO](https://sites.google.com/unife.it/guido/)
 	* Addendum: The PhD Degree is a joint program between the [University of Ferrara](http://www.unife.it), [University of Modena-Reggio Emilia](http://www.unimore.it) and [University of Parma](http://www.unipr.it)
 * Member of the [Applied Computational Logic and Artificial Intelligence Laboratory](https://sites.google.com/unife.it/aclai-lab) (ACLAI Lab.) of the Department of Mathematics and Computer Science at the [University of Ferrara](http://www.unife.it)
 * Member of the [Formal Verification, Logic, Automata, and Synthesis](https://overlay.uniud.it/) (OVERLAY) research group
@@ -38,15 +38,21 @@ He likes interdisciplinarity. He enjoys when people are motivated. As being a te
 #### past
 * MSc Degree in Computer Science at the [University of Udine](http://www.uniud.it)
 	* Thesis: [Multiple Formulas and Multiple Models Finite Interval-based Model Checking](assets/pdf/theses/mmmc.pdf)
-	* Supervisors: Prof. [Dario DELLA MONICA](https://users.dimi.uniud.it/~dario.dellamonica/), Prof. [Angelo MONTANARI](https://users.dimi.uniud.it/~angelo.montanari/index.php), and Prof. [Guido SCIAVICCO](https://sites.google.com/unife.it/guido/)
+	* Advisors: Prof. [Dario DELLA MONICA](https://users.dimi.uniud.it/~dario.dellamonica/), Prof. [Angelo MONTANARI](https://users.dimi.uniud.it/~angelo.montanari/index.php), and Prof. [Guido SCIAVICCO](https://sites.google.com/unife.it/guido/)
 	* Score: 110/110 *cum laude*
 * BSc Degree in Computer Science at the [University of Ferrara](http://www.unife.it)
 	* Thesis: [Implementation of a Tableau-based Satisfiability Checker for the Logic HS<sub>3</sub>](assets/pdf/theses/hs3.pdf)
-	* Supervisor: Prof. [Guido SCIAVICCO](https://sites.google.com/unife.it/guido/)
+	* Advisor: Prof. [Guido SCIAVICCO](https://sites.google.com/unife.it/guido/)
 	* Score: 110/110 *cum laude*
 * 5-months Erasmus<sup>+</sup> European Program in Computer Engineering at the [University of Murcia](https://www.um.es/)
 * Student Member of the Quality Assurance Commission (*Commissione Assicurazione Qualità*, in italian) at the [University of Udine](http://www.uniud.it)
 * Student Member of the Addressing Committee for periodic consultations with the labour market (*Comitato di indirizzamento per le consultazioni periodiche con il mondo del lavoro*, in italian) at the [University of Udine](http://www.uniud.it)
+
+---
+
+## awards and scholarships
+* 3-years scholarship founded by the [Italian Ministry of Education, Universities and Research](https://www.miur.gov.it/) (*Ministero dell'Istruzione, dell'Università e della Ricerca*, in italian) for the PhD in Mathematics at the [University of Parma](http://www.unipr.it)
+* Best graduate award (1.000€) in the MSc Degree in Computer Science (*Laurea Magistrale in Informatica*, in italian) at the [University of Udine](http://www.uniud.it) 
 
 ---
 <!---

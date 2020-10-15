@@ -29,10 +29,10 @@ He likes interdisciplinarity. He enjoys when people are motivated. As being a te
 	* Research: (Interval) Temporal Symbolic Learning
 	* Advisor: Prof. [Guido SCIAVICCO](https://sites.google.com/unife.it/guido/)
 	* Addendum: The PhD Degree is a joint program between the [University of Ferrara](http://www.unife.it), [University of Modena-Reggio Emilia](http://www.unimore.it) and [University of Parma](http://www.unipr.it)
-* Member of the [Applied Computational Logic and Artificial Intelligence Laboratory](https://sites.google.com/unife.it/aclai-lab) (ACLAI Lab.) of the Department of Mathematics and Computer Science at the [University of Ferrara](http://www.unife.it)
-* Member of the [Formal Verification, Logic, Automata, and Synthesis](https://overlay.uniud.it/) (OVERLAY) research group
-* Member of the [Italian National Group for Scientific Calculus](https://www.altamatematica.it/gncs/) (*Gruppo Nazionale per il Calcolo Scientifico*, in italian)
-* Deputy coordinator of the [Doctoral Students and PhDs Association in Italy](http://www.dottorato.it) (*Associazione Dottorandi e Dottori di Ricerca in Italia*, in italian) at the local level of Ferrara
+* Member of the [Applied Computational Logic and Artificial Intelligence Laboratory - ACLAI Lab.](https://sites.google.com/unife.it/aclai-lab) of the Department of Mathematics and Computer Science at the [University of Ferrara](http://www.unife.it)
+* Member of the [Formal Verification, Logic, Automata, and Synthesis - OVERLAY](https://overlay.uniud.it/) research group
+* Member of the [Italian National Group for Scientific Calculus - GNCS](https://www.altamatematica.it/gncs/) (*Gruppo Nazionale per il Calcolo Scientifico*, in italian)
+* Deputy coordinator of the [Doctoral Students and PhDs Association in Italy - ADI](http://www.dottorato.it) (*Associazione Dottorandi e Dottori di Ricerca in Italia*, in italian) of Ferrara
 * PhD Students' Representative of the Department of Mathematics and Computer Science at the [University of Ferrara](http://www.unife.it)
 
 #### past

@@ -32,7 +32,7 @@ He likes interdisciplinarity. He enjoys when people are motivated. As being a te
 * Member of the [Applied Computational Logic and Artificial Intelligence Laboratory](https://sites.google.com/unife.it/aclai-lab) (ACLAI Lab.) of the Department of Mathematics and Computer Science at the [University of Ferrara](http://www.unife.it)
 * Member of the [Formal Verification, Logic, Automata, and Synthesis](https://overlay.uniud.it/) (OVERLAY) research group
 * Member of the [Italian National Group for Scientific Calculus](https://www.altamatematica.it/gncs/) (*Gruppo Nazionale per il Calcolo Scientifico*, in italian)
-* Member of the [Doctoral Students and PhDs Association in Italy](http://www.dottorato.it) (*Associazione Dottorandi e Dottori di Ricerca in Italia*, in italian)
+* Deputy coordinator of the [Doctoral Students and PhDs Association in Italy](http://www.dottorato.it) (*Associazione Dottorandi e Dottori di Ricerca in Italia*, in italian) at the local level of Ferrara
 * PhD Students' Representative of the Department of Mathematics and Computer Science at the [University of Ferrara](http://www.unife.it)
 
 #### past

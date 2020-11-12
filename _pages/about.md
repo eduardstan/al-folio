@@ -53,7 +53,7 @@ He likes interdisciplinarity. He enjoys when people are motivated. As being a te
 ## awards and scholarships
 * 3-years scholarship founded by the [Italian Ministry of Education, Universities and Research](https://www.miur.gov.it/) (*Ministero dell'Istruzione, dell'Università e della Ricerca*, in italian) for the PhD in Mathematics at the [University of Parma](http://www.unipr.it)
 * Best graduate award (1.000€) in the MSc Degree in Computer Science (*Laurea Magistrale in Informatica*, in italian) at the [University of Udine](http://www.uniud.it) 
-* Winner of an Erasmus<sup>+</sup> full-scholarship hosted at the [University of Murcia](https://www.um.es/) in Spain for 5 months.
+* Winner of an Erasmus<sup>+</sup> full-scholarship hosted at the [University of Murcia](https://www.um.es/) for 5 months
 
 ---
 <!---

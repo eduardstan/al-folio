@@ -18,7 +18,7 @@ nav: true
 ## office address
 > Department of Mathematics and Computer Science
 >
-> Via Nicolò Macchiavelli, 30, Ferrara, 44124, Italy
+> Via Nicolò Machiavelli, 30, Ferrara, 44124, Italy
 >
 > 1<sup>st</sup> Floor, PhD Students Office (Ufficio Dottorandi)
 

@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Eduard Ionel STAN | A gentle introduction to (Temporal) Logics</title>
+<meta name="description" content="Eduard's Personal Website">
+
+<!-- Bootstrap & MDB -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.17.0/css/mdb.min.css" integrity="sha256-/SwJ2GDcEt5382i8zqDwl36VJGECxEoIcBIuoLmLR4g=" crossorigin="anonymous" />
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"  integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+<!-- Styles -->
+<link rel="shortcut icon" href="/assets/img/favicon.ico">
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<link rel="canonical" href="/blog/2020/temporal-logics/">
+
+<!-- Open Graph -->
+
+
+<!--- SEO --->
+ <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>A gentle introduction to (Temporal) Logics | Eduard Ionel STAN</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="A gentle introduction to (Temporal) Logics" />
+<meta name="author" content="Stan, I.E." />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A simple introduction to the field of mathematical logic." />
+<meta property="og:description" content="A simple introduction to the field of mathematical logic." />
+<meta property="og:site_name" content="Eduard Ionel STAN" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-08-18T00:00:00+02:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","headline":"A gentle introduction to (Temporal) Logics","dateModified":"2020-08-18T00:00:00+02:00","datePublished":"2020-08-18T00:00:00+02:00","mainEntityOfPage":{"@type":"WebPage","@id":"/blog/2020/temporal-logics/"},"url":"/blog/2020/temporal-logics/","author":{"@type":"Person","name":"Stan, I.E."},"description":"A simple introduction to the field of mathematical logic.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+ 
+
+    <script src="/assets/js/distillpub/template.v2.js"></script>
+    <script src="/assets/js/distillpub/transforms.v2.js"></script>
+    
+    <style type="text/css">
+      .fake-img {
+  background: #bbb;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 12px;
+} .fake-img p {
+  font-family: monospace;
+  color: white;
+  text-align: left;
+  margin: 12px 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+    </style>
+    
+  </head>
+
+  <d-front-matter>
+    <script type="text/json">{
+      "title": "A gentle introduction to (Temporal) Logics",
+      "description": "A simple introduction to the field of mathematical logic.",
+      "published": "2020-08-18 00:00:00 +0200",
+      "authors": [
+        
+        {
+          "author": "Stan, I.E.",
+          "authorURL": "",
+          "affiliations": [
+            {
+              "name": "Department of Mathematics and Computer Science, University of Ferrara, and Department of Mathematical, Physical, and Computer Sciences, University of Parma",
+              "url": ""
+            }
+          ]
+        }
+        
+      ],
+      "katex": {
+        "delimiters": [
+          {
+            "left": "$",
+            "right": "$",
+            "display": false
+          },
+          {
+            "left": "$$",
+            "right": "$$",
+            "display": true
+          }
+        ]
+      }
+    }</script>
+  </d-front-matter>
+
+  <body class="fixed-top-nav ">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light bg-white navbar-expand-sm fixed-top">
+    <div class="container">
+      
+      
+      
+      
+      
+      <a class="navbar-brand title font-weight-lighter" href="/">
+       <span class="font-weight-bold">Eduard Ionel</span>  STAN
+      </a>
+      
+      <!-- Navbar Toogle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/">
+              about
+              
+            </a>
+          </li>
+          
+          <!-- Blog -->
+          <li class="nav-item active">
+            <a class="nav-link" href="/blog/">
+              blog
+              
+            </a>
+          </li>
+          
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/contacts/">
+                contacts
+                
+              </a>
+          </li>
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/publications/">
+                publications
+                
+              </a>
+          </li>
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/talks/">
+                talks
+                
+              </a>
+          </li>
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/teaching/">
+                teaching
+                
+              </a>
+          </li>
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="post distill">
+
+      <d-title>
+        <h1>A gentle introduction to (Temporal) Logics</h1>
+        <p>A simple introduction to the field of mathematical logic.</p>
+      </d-title>
+
+      <d-byline></d-byline>
+
+      <d-article>
+        <h1 id="table-of-contents">Table of Contents</h1>
+<ol>
+  <li><a href="#introduction">Introduction</a></li>
+  <li><a href="#first-order-logic">First Order Logic</a></li>
+  <li><a href="#propositional-logic">Propositional Logic</a></li>
+  <li><a href="#modal-logic">Modal Logic</a></li>
+  <li><a href="#temporal-logic">Temporal Logic</a></li>
+  <li><a href="#interval-temporal-logic">Interval Temporal Logic</a></li>
+  <li><a href="#conclusions">Conclusions</a></li>
+</ol>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Every formal science needs a language to be able for expressing results and communicate information with others in a comprehensible way. Logic’s purpose is to study this formal representation without ambiguity in terms of a formal language providing to humans those crucial mathematical mechanisms to securely control reasonings. It is obvious that there is no universal logical language to represent every science.</p>
+
+<p>The goal is to present a journey through a possible set of formal languages (actively) used in Artificial Intelligence (AI).</p>
+
+<h2 id="first-order-logic">First Order Logic</h2>
+
+<p><em>Predicate logic</em> or, more commonly, <em>First Order Logic</em> ($\mathsf{FOL}$) is an excellent departure for our survey. In a matter of fact, its important structural properties gives us enough formal “ingredients” to express classes of problems.</p>
+
+<p>The alphabet $\Sigma$ over $\mathsf{FOL}$ is formed by:</p>
+
+<ul>
+  <li>logical <em>connectives</em>: $\bot, \top, \neg, \land, \lor, \to$;</li>
+  <li><em>quantifiers</em>: $\forall, \exists$;</li>
+  <li>a set $\mathcal{C}$ of <em>constant</em> symbols: $a,b,c,d,\ldots$;</li>
+  <li>an infinite set $\mathcal{V}$ of <em>variable</em> symbols: $u,v,w,x,y,\ldots$;</li>
+  <li>a set $\mathcal{F}$ of <em>function</em> symbols: $f,g,h,\ldots$;</li>
+  <li>a set $\mathcal{P}$ of <em>predicate</em> symbols: $P,Q,R,\ldots$.</li>
+</ul>
+
+<p>Each predicate symbol and each function symbol comes with an <em>arity</em>, i.e., the number of arguments that expects. Constants can be thought of as $0$-arity functions which does not take any argument, therefore constants live in the set $\mathcal{F}$ together with the true functions which do take arguments<d-cite key="lics_huth_ryan"></d-cite>; $0$-arity functions are also called <em>nullary</em> functions.</p>
+
+<p>In computer science, the notion of term is widely used in an implicit way. For instance, an arithmetic expression is a term obtained applying (arithmetical) operators to some operands. Therefore, the set of <em>terms</em> $\mathcal{T}$ of the $\mathsf{FOL}$ language is defined inductively as:</p>
+
+\[t ::= x \mid c \mid f(t_1,\ldots,t_n),\]
+
+<p>where $x$ ranges over the set of variables $\mathcal{V}$, $c$ over nullary function symbols in $\mathcal{F}$, and $f$ over those elements of $\mathcal{F}$ with arity $n &gt; 0$.</p>
+
+<p>Well formed formulas over $\mathsf{FOL}$ are generated by the following grammar:</p>
+
+\[\varphi ::= P(t_1,\ldots,t_n) \mid \neg \varphi \mid \varphi \lor \varphi \mid \exists x (\varphi),\]
+
+<p>where $P \in \mathcal{P}$ is a predicate symbol of arity $n \geq 1$, $t_i$ are terms over $\mathcal{F}$ and $x \in \mathcal{V}$ is a variable symbol. The remaining connectives are derived from the others as:</p>
+
+<ul>
+  <li>$\bot \equiv \neg (\neg \varphi \lor \varphi)$;</li>
+  <li>$\top \equiv \neg \bot$;</li>
+  <li>$\varphi_1 \land \varphi_2 \equiv \neg (\neg \varphi_1 \lor \neg \varphi_2)$;</li>
+  <li>$\varphi_1 \to \varphi_2 \equiv \neg \varphi_1 \lor \varphi_2$;</li>
+  <li>$\forall x (\varphi) \equiv \neg \exists x (\neg \varphi)$.</li>
+</ul>
+
+<p>$\mathsf{FOL}$ is much more expressive than other logics presented here. As a matter of fact, in order to define its semantics, <em>structures</em> are build with a set $\mathcal{D}$ (the <em>domain</em>) together with a collection of functions and <em>relations</em> over the domain. A structure for a language is called interpretation. Formally, an <em>interpretation</em> $\mathcal{I}$ of the pair $(\mathcal{F},\mathcal{P})$ consists in the following:</p>
+
+<ul>
+  <li>a non-empty set $\mathcal{D}$ representing the domain of concrete values;</li>
+  <li>for each $c \in \mathcal{C}$, a concrete element $c^{\mathcal{I}}$ of $\mathcal{D}$;</li>
+  <li>for each $f \in \mathcal{F}$ with arity $n &gt; 0$, a concrete function $f^{\mathcal{I}}: \mathcal{D}^n \to \mathcal{D}$;</li>
+  <li>for each $P \in \mathcal{P}$ with arity $n &gt; 0$, a subset $P^{\mathcal{I}} \subseteq \mathcal{D}^n$,</li>
+</ul>
+
+<p>where $c, f$ and $P$ are just constant, function and predicate symbols, and $c^{\mathcal{I}}, f^{\mathcal{I}}$ and $P^{\mathcal{I}}$ are concrete constant, function and relation, respectively.</p>
+
+<p>For each term $t \in \mathcal{T}$, we need a function $\sigma: \mathcal{T} \to \mathcal{D}$, called <em>state</em>, that assigns, inductively, to each term $t$ a value $\sigma(t) \in \mathcal{D}$, defined as follows:</p>
+
+<ul>
+  <li>if $t$ is a variable $x$, then $\sigma(t) = \sigma(x)$;</li>
+  <li>if $t$ is a constant $c$, then $\sigma(t) = c^{\mathcal{I}}$;</li>
+  <li>if $t$ is a term like $f(t_1,\ldots,t_n)$, then $\sigma(t) = f^{\mathcal{I}}(\sigma(t_1), \ldots, \sigma(t_n))$.</li>
+</ul>
+
+<p>Given an interpretation $\mathcal{I}$ with its state $\sigma$, we are able to define the semantics of $\mathsf{FOL}$’s language as follows:</p>
+
+<ul>
+  <li>$\mathcal{I},\sigma \models P(t_1,\ldots,t_n)$ iff $(\sigma(t_1),\ldots,\sigma(t_n)) \in P^{\mathcal{I}}$ meaning that the concrete values $(d_1,\ldots,d_n) \in \mathcal{D}^n$ are computed by replacing all terms with their values according to $\sigma$;</li>
+  <li>$\mathcal{I},\sigma \models \neg \varphi$ iff $\mathcal{I},\sigma \not\models \varphi$;</li>
+  <li>$\mathcal{I},\sigma \models \varphi_1 \lor \varphi_2$ iff $\mathcal{I},\sigma \models \varphi_1$ or $\mathcal{I},\sigma \models \varphi_2$;</li>
+  <li>$\mathcal{I},\sigma \models \exists x (\varphi)$ iff $\mathcal{I},\sigma \models \varphi$ for some $d \in \mathcal{D}$ such that $\sigma(x) = d$.</li>
+</ul>
+
+<p>We say that a formula $\varphi$ is <em>satisfiable</em> if there exists a true interpretation $\mathcal{I}$ along with its state $\sigma$; in this case, $\mathcal{I}$ is called <em>model</em> $M$ and we write $\mathcal{I},\sigma \models \varphi$ or $M,\sigma \models \varphi$. If $M,\sigma \models \varphi$ holds, we say that $\varphi$ computes to $\top$ in the model $M$ with respect to its state $\sigma$. A formula $\varphi$ is <em>unsatisfiable</em>, denoted by $\not\models \varphi$, if there is no way to give a true interpretation over it. A formula $\varphi$ is a <em>tautology</em> (or <em>validity</em>) if every interpretation is a model or if $\neg \varphi$ is unsatisfiable. Moreover, two formulas $\varphi_1$ and $\varphi_2$ are said to be <em>semantically equivalent</em>, denoted by $\varphi_1 \equiv \varphi_2$, if and only if, for all interpretations $\mathcal{I}$, it turns out that $\mathcal{I}(\varphi_1) = \mathcal{I}(\varphi_2)$.</p>
+
+<p>In order to take a closer look to the inherent difficulty of $\mathsf{FOL}$, we choose the <em>satisfiability</em><d-cite key="Cook:1971:CTP:800157.805047,sisper_computation"></d-cite> (SAT, for short) problem as emblematic. It turns out that the SAT problem gives us a good measure of the complexity of a given problem. There are good news and bad news: the SAT problem for the $\mathsf{FOL}$ is not decidable <d-cite key="sisper_computation"></d-cite>. On the other hand, the good news are that several problems can be transformed into SAT problems. For instance, the <em>deduction problem</em>, that is given the premises $\varphi_1,\varphi_2,\ldots,\varphi_n$ the goal is to conclude the consequent $\varphi_{n+1}$, can be translated into a SAT problem: if the formula $\varphi \equiv \varphi_1 \land \varphi_2 \land \ldots \land \varphi_n \land \neg \varphi_{n+1}$ has a true interpretation, then, clearly, we cannot conclude $\varphi_{n+1}$ (from the premises).</p>
+
+<h2 id="propositional-logic">Propositional Logic</h2>
+
+<p>The problem with $\mathsf{FOL}$ is that thanks to its expressive power we can capture a class of problems that is too large. Because of the undecidable nature, we are forced to limit its expressiveness in order to obtain languages that are useful from the practical point of view.</p>
+
+<p><em>Propositional Logic</em> ($\mathsf{PL}$) is one of these candidates which has interesting properties. First, its SAT problem is known to be decidable and it is $NP$-complete <d-cite key="Cook:1971:CTP:800157.805047"></d-cite>; thus, we can build terminating programs for it. Second, it is strictly less expressive than $\mathsf{FOL}$, denoted here as:</p>
+
+\[\mathsf{PL} \prec \mathsf{FOL}.\]
+
+<p>This presentation is different from those found in the literature (see, e.g., <d-cite key="lics_huth_ryan"></d-cite>) in which, normally, the journey starts with $\mathsf{PL}$ studying its syntactic and semantic structures ending with its expressiveness limits, and, after these limits are given, later $\mathsf{FOL}$ is the subject of the discourse. Limiting the expressive power of an undecidable logic, such as $\mathsf{FOL}$, gives us better computational behaviors and this is the case, for example, of $\mathsf{PL}$.</p>
+
+<p>The alphabet $\Sigma$ of $\mathsf{PL}$ language is formed by:</p>
+
+<ul>
+  <li>logical connectives: $\bot, \top, \neg, \land, \lor, \to$;</li>
+  <li>a set $\mathcal{AP}$ of <em>atomic propositions</em>: $p,q,r,t,\ldots$.</li>
+</ul>
+
+<p>Well formed formulas are generated by the following grammar:</p>
+
+\[\varphi ::= p \mid \neg \varphi \mid \varphi \lor \varphi.\]
+
+<p>The remaining connectives are derived as before.</p>
+
+<p>The investigation of $\mathsf{PL}$ is focused on propositions, that is a concept of truth value. These propositions can be atoms or <em>composition</em> of atoms. An atom (or atomic formula) are the most simple well formed formulas of the logic with no deeper structure, meanwhile the more complex well formed formulas are generated from simple atoms; for instance, atoms in $\mathsf{FOL}$ are formulas of the form $P(t_1,\ldots,t_n)$ for $P$ a predicate and $t_1,\ldots,t_n$ terms, and composition of formulas are those obtained, recursively, applying logical connectives and/or quantifiers to atoms.</p>
+
+<p>In this formal language, an interpretation is a function $\nu : \mathcal{AP} \to \{\top,\bot\}$, that assigns truth values to each atomic formula. If an interpretation $\nu$ is a model $M$ for a formula $\varphi$, then we write $M \models \varphi$.</p>
+
+<p>The semantics of $\mathsf{PL}$ is defined by structural induction as:</p>
+<ul>
+  <li>$M \models p$ iff $p \in M$;</li>
+  <li>$M \models \neg \varphi$ iff $M \not\models \varphi$;</li>
+  <li>$M \models \varphi_1 \lor \varphi_2$ iff $M \models \varphi_1$ or $M \models \varphi_2$.</li>
+</ul>
+
+<h2 id="modal-logic">Modal Logic</h2>
+
+<p><em>Modal Logic</em> ($\mathsf{ML}$) is used in computer science, for example, to formalize reasoning about the way programs behave and to express dynamical properties of transition between states in a transition system (i.e., a labelled directed graph).</p>
+
+<p>The alphabet $\Sigma$ of $\mathsf{ML}$ language is formed by:</p>
+
+<ul>
+  <li>logical connectives: $\bot, \top, \neg, \land, \lor, \to$;</li>
+  <li>unary <em>modal operators</em>: $\Diamond, \Box$;</li>
+  <li>a set $\mathcal{AP}$ of <em>atomic propositions</em>: $p,q,r,t,\ldots$.</li>
+</ul>
+
+<p>Well formed formulas are generated by the following grammar:</p>
+
+\[\varphi ::= p \mid \neg \varphi \mid \varphi \lor \varphi \mid \Diamond \varphi.\]
+
+<p>The remaining connectives are derived as before with particular attention to:</p>
+
+<ul>
+  <li>$\Box \varphi \equiv \neg \Diamond \neg \varphi,$</li>
+</ul>
+
+<p>which stands for <em>“what is necessarily true is not possibly not true”</em>. Moreover, $\Box \varphi$ and $\Diamond \varphi$ in terms of computer programs could say that <em>”$\varphi$ will be true after every execution of the program”</em> and <em>”$\varphi$ will be true after some execution of the program”</em>, respectively.</p>
+
+<p>$\mathsf{ML}$ is strictly less expressive than $\mathsf{FOL}$, but strictly more expressive than $\mathsf{PL}$:</p>
+
+\[\mathsf{PL} \prec \mathsf{ML} \prec \mathsf{FOL}.\]
+
+<p>The semantics for $\mathsf{ML}$ are defined in terms of <em>Kripke frames</em> and <em>Kripke models</em> <d-cite key="kripke"></d-cite>. Formally, a Kripke frame is a pair $\langle \mathcal{W}, \mathcal{R} \rangle$, where $\mathcal{W}$ is a non-empty set of possible <em>worlds</em> and $\mathcal{R} \subseteq \mathcal{W} \times \mathcal{W}$ is an <em>accessibility relation</em> between possible worlds. A Kripke model $M$ is a structure $\langle \mathcal{W},\mathcal{R},V \rangle$, where $\langle \mathcal{W}, \mathcal{R} \rangle$ is a Kripke frame and $V : \mathcal{AP} \to 2^{\mathcal{W}}$ is a <em>valuation function</em> assigning to every atomic proposition the set of possible worlds where it is true; $2^{\mathcal{W}}$ is the <em>power set</em> of $\mathcal{W}$ also denoted by $\wp(\mathcal{W})$. In this journey, we concern (only) on the logic $\mathsf{K}$ of all Kripke models whose SAT problem is known to be $PSpace$-complete<d-cite key="DBLP:journals/siamcomp/Ladner77"></d-cite>. The truth of a formula $\varphi$ at a possible world $w$ in a Kripke model $M = \langle \mathcal{W},\mathcal{R},V \rangle$ is defined by structural induction as follows:</p>
+
+<ul>
+  <li>$M,w \models p$ iff $w \in V(p)$, $\forall p \in \mathcal{AP}$;</li>
+  <li>$M,w \models \neg \varphi$ iff $M,w \not\models \varphi$;</li>
+  <li>$M,w \models \varphi_1 \lor \varphi_2$ iff $M,w \models \varphi_1$ or $M,w \models \varphi_2$;</li>
+  <li>$M,w \models \Diamond \varphi$ iff $M,u \models \varphi$ for some $u \in \mathcal{W}$ such that $(w,u) \in \mathcal{R}$.</li>
+</ul>
+
+<p>Respectively, $M,w \models \Box \varphi$ iff $M,u \models \varphi$ for every $u \in \mathcal{W}$ such that $(w,u) \in \mathcal{R}$.</p>
+
+<p>We mentioned that we are interested only on logic $\mathsf{K}$ of all Kripke models, although other modal logics (e.g., $\mathsf{T}, \mathsf{D}, \mathsf{B}, \mathsf{K4}, \mathsf{S4}, \mathsf{S5})$ can be defined semantically by restricting the class of Kripke frames in which modal formulas are interpreted.</p>
+
+<h2 id="temporal-logic">Temporal Logic</h2>
+
+<p>The typical approach of classical logic adopts a static fashion reasoning within a single fixed world. For example, a proposition such that <em>“it is Sunday”</em> must be either true or false. <em>Temporal Logic</em> is used as formalism to define the semantics of temporal expressions in natural language, as a language for encoding temporal knowledge in Artificial Intelligence <d-cite key="sep-logic-temporal"></d-cite>. Most systems are dynamic in their domain, therefore we need the granular properties of time.</p>
+
+<p>Time can be thought as a set of paths (a sequence of time instances) or as a (rooted) tree. An emblematic example of temporal logic based on the former interpretation is <em>Linear Temporal Logic</em> ($\mathsf{LTL}$). Similarly, the most prominent example of temporal logic following the latter structure is <em>Computation Tree Logic</em> ($\mathsf{CTL}$).In this section, we do not present $\mathsf{CTL}$ because is not interesting for the purpose of this presentation, but we do present a particular type of $\mathsf{LTL}$, namely $\mathsf{LTL}_{F,P}$ with <em>future</em> and <em>past</em> whose SAT problem is $NP$-complete <d-cite key="pltl_emerson"></d-cite>. For simplicity, in the entire section we denote it with $\mathsf{LTL}$.</p>
+
+<p>$\mathsf{LTL}$ is characterized by featuring two modalities that can be seen as two specific interpretations of the generic modalities $\Diamond$ and $\blacklozenge$, and are usually symbolized with the symbols $F$ and $P$ representing the concepts of future and past, respectively.</p>
+
+<p>The $\mathsf{LTL}$ syntax is based on:</p>
+
+<ul>
+  <li>logical connectives: $\bot, \top, \neg, \land, \lor, \to$;</li>
+  <li>unary <em>modal operators</em>: $F, G, P, H$;</li>
+  <li>a set $\mathcal{AP}$ of <em>atomic propositions</em>: $p,q,r,t,\ldots$.</li>
+</ul>
+
+<p>Well formed formulas are generated by the following grammar:</p>
+
+\[\varphi ::= p \mid \neg \varphi \mid \varphi \lor \varphi \mid F \varphi \mid P \varphi.\]
+
+<p>The remaining connectives are derived as before with particular attention to:</p>
+
+<ul>
+  <li>$G \varphi \equiv \neg F \neg \varphi$,</li>
+</ul>
+
+<p>which stands for <em>“it will always (in the future) be the case that $\varphi$”</em>, and to:</p>
+
+<ul>
+  <li>$H \varphi \equiv \neg P \neg \varphi$,</li>
+</ul>
+
+<p>which stands for <em>“it has always (in the past) been the case that $\varphi$”</em>.</p>
+
+<p>With this new syntax it should be clear that $\mathsf{LTL}$ is strictly less expressive than $\mathsf{FOL}$, but strictly more expressive than $\mathsf{ML}$:</p>
+
+\[\mathsf{PL} \prec \mathsf{ML} \prec \mathsf{LTL} \prec \mathsf{FOL}.\]
+
+<p>In order to define the semantics, we consider the same notation as for $\mathsf{ML}$ of Kripke frames and Kripke models. The primitive entities are <em>time instants</em> and, therefore, the basic relationship between them are the equality and the successor, denoted with the function $succ()$; the operators $F$ and $P$ are based on the transitive closure of $succ()$, normally denoted by $&lt;$. Meanwhile, the domain $\mathcal{W}$ is isomorphic to the set of natural numbers $\mathbb{N}$. Thus, the temporal frame, expressed in terms of Kripke frames, for $\mathsf{LTL}$ is a pair $\langle \mathbb{N}, &lt; \rangle$, and the temporal model, expressed in terms of Kripke models, is a triple $\langle \mathbb{N}, &lt;, V \rangle$, where the valuation $V$ assigns to every $p \in \mathcal{AP}$ a set of time instants $V(p) \subseteq \mathbb{N}$ at which $p$ is declared true. The truth at an instant $t \in \mathbb{N}$ in a model $M = \langle \mathbb{N}, &lt;, V \rangle$, as in $\mathsf{ML}$, is defined as:</p>
+
+<ul>
+  <li>$M,t \models p$ iff $t \in V(p)$, $\forall p \in \mathcal{AP}$;</li>
+  <li>$M,t \models \neg \varphi$ iff $M,t \not\models \varphi$;</li>
+  <li>$M,t \models \varphi_1 \lor \varphi_2$ iff $M,t \models \varphi_1$ or $M,t \models \varphi_2$;</li>
+  <li>$M,t \models F \varphi$ iff $M,s \models \varphi$ for some $s \in \mathbb{N}$ such that $t &lt; s$;</li>
+  <li>$M,t \models P \varphi$ iff $M,s \models \varphi$ for some $s \in \mathbb{N}$ such that $s &lt; t$.</li>
+</ul>
+
+<h2 id="interval-temporal-logic">Interval Temporal Logic</h2>
+
+<p>In the previous section we discussed about temporal reasoning based on time instants, namely point-based temporal logic. However, time points cannot properly reason about events that have an intrinsic duration. Thus, in this section we present a different approach concerning the logical communities.</p>
+
+<p><em>Interval Temporal Logic</em> ($\mathsf{ITL}$) takes as primitive ontological entities <em>time intervals</em> (or <em>periods</em>), rather than points. The context of interval-based logics is still “young”, meaning that the scientific community is actively investing resources in studying these formalisms. For this reason, we do not have a proper representative of such class of logics, as we have for other logics (previously presented). However, Halpern and Shoham in <d-cite key="interval_modal_logic"></d-cite> presented the <em>Halpern-Shoham Interval (Multi-)Modal Logic</em>, hereafter $\mathsf{HS}$ for short, among with its undecidable result over many classes of linearly ordered sets. The distinguishing elegance and expressive power of $\mathsf{HS}$ have attracted the attention of modal and temporal logic communities, and, therefore, we take $\mathsf{HS}$ asrepresentative element of such class of logics.</p>
+
+<p>Given a strict (i.e., irreflexive) linearly ordered set $\mathbb{D} = \langle \mathcal{D}, &lt; \rangle$, an <em>interval</em> over $\mathbb{D}$ is an ordered pair $[x,y]$ such that $x,y \in \mathcal{D}$ and $x \leq y$. If $x=y$ then the interval is called <em>point interval</em>; otherwise, it is called a <em>proper (strict) interval</em>. An <em>interval structure</em> is a pair $\langle \mathbb{D}, \mathbb{I}(\mathbb{D}) \rangle$, where $\mathbb{I}(\mathbb{D})$ is the set of all <em>strict intervals</em>.</p>
+
+<p>$\mathsf{HS}$ has its roots in Allen’s Interval Algebra <d-cite key="allen83"></d-cite>: modal operators in $\mathsf{HS}$ can be mapped one-by-one over Allen’s Interval Relations, often called Allen’s Relations. The middle column of the following figure represents a sketch of such binary relations over strict semantics: $R_L$ (<em>later than</em>), $R_A$ (<em>meets/after than</em>), $R_O$ (<em>overlaps</em>), $R_E$ (<em>ends/finishes</em>), $R_D$ (<em>during</em>), $R_B$ (<em>begins/starts</em>) and their inverses, that are, $R_{\overline{L}}$ (<em>before</em>), $R_{\overline{A}}$ (<em>met by</em>), $R_{\overline{O}}$ (<em>overlapped by</em>), $R_{\overline{E}}$ (<em>ended by</em>), $R_{\overline{D}}$ (<em>contains</em>), $R_{\overline{B}}$ (<em>begun by</em>). These $13$ relations (including the <em>equality</em>) are mutually exclusive and jointly exhaustive, meaning that exactly one Allen’s relation holds between any given pair of strict intervals.</p>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/blog/2020/temporal-logics/HS.png" />
+    </div>
+</div>
+
+<div class="caption">
+    HS modalities and Allen's Relations.
+</div>
+
+<p>The $\mathsf{HS}$ syntax is based on:</p>
+
+<ul>
+  <li>logical connectives: $\bot, \top, \neg, \land, \lor, \to$;</li>
+  <li>unary <em>modal operators</em>: $\langle X \rangle, [X], \langle \overline{X} \rangle, [\overline{X}]$;</li>
+  <li>a set $\mathcal{AP}$ of <em>atomic propositions</em>: $p,q,r,t,\ldots$;</li>
+</ul>
+
+<p>where, for each $X \in \{L,A,O,E,D,B\}$, $\langle X \rangle$ is an <em>existential</em> interval modality according to those in the previous figure, and its dual <em>universal</em> modality is defined as $[X] \equiv \neg \langle X \rangle \neg$.</p>
+
+<p>Well formed formulas are generated by the following grammar:</p>
+
+\[\varphi ::= p \mid \neg \varphi \mid \varphi \lor \varphi \mid \langle X \rangle \varphi \mid \langle \overline{X} \rangle \varphi.\]
+
+<p>The remaining connectives are derived as before.</p>
+
+<p>Formulas are interpreted on <em>interval models</em> $M = \langle \mathbb{I}(\mathbb{D}), V \rangle$, where $V : \mathcal{AP} \to 2^{\mathbb{I}(\mathbb{D})}$ is a valuation function that associates to every proposition letter $p \in \mathcal{AP}$ the set of intervals $V(p)$ on which $p$ holds. Moreover, to stress the fact that $\mathsf{HS}$ is an extended version of $\mathsf{ML}$, following the same notation from $\mathsf{ML}$, we should define models as $M = \langle \mathbb{I}(\mathbb{D}),R_L,R_{\overline{L}},R_A,R_{\overline{A}},\ldots,V \rangle$, but the relations $R_X$ and $R_{\overline{X}}$, where $X \in \{L,A,O,E,D,B\}$, of $\mathsf{HS}$ are implied by the relation $&lt;$. The satisfiability relation is defined as:</p>
+
+<ul>
+  <li>$M,[x,y] \models p$ iff $[x,y] \in V(p)$, $\forall p \in \mathcal{AP}$;</li>
+  <li>$M,[x,y] \models \neg \varphi$ iff $M,[x,y] \not\models \varphi$;</li>
+  <li>$M,[x,y] \models \varphi_1 \lor \varphi_2$ iff $M,[x,y] \models \varphi_1$ or $M,[x,y] \models \varphi_2$;</li>
+  <li>$M,[x,y] \models \langle X \rangle \varphi$ iff exists an interval $[z,t]$ such that $[x,y]R_X[z,t]$ and $M,[z,t] \models \varphi$;</li>
+  <li>$M,[x,y] \models \langle \overline{X} \rangle \varphi$ iff exists an interval $[z,t]$ such that $[x,y]R_{\overline{X}}[z,t]$ and $M,[z,t] \models \varphi$;</li>
+</ul>
+
+<p>where $X \in \{L,A,O,E,D,B\}$. To give an example, we can define the semantics of the during relation as:</p>
+
+<ul>
+  <li>$M,[x,y] \models \langle D \rangle \varphi$ iff $M,[z,t]$ for some $[z,t]$ such that $x &lt; z &lt; t &lt; y$.</li>
+</ul>
+
+<p>Like $\mathsf{FOL}$, the SAT problem for HS is undecidable. A diffrence between $\mathsf{FOL}$ and $\mathsf{HS}$ is that it is natural to investigate on reasonable auto-contained fragments with better computational properties from the practical point of view. It turns out that $\mathsf{HS}$ is more expressive than $\mathsf{LTL}$:</p>
+
+\[\mathsf{PL} \prec \mathsf{ML} \prec \mathsf{LTL} \prec \mathsf{HS} \prec \mathsf{FOL}.\]
+
+<p>Following the same terminology from $\mathsf{HS}$, in order to define the semantics of a new, less expressive logic, called $\mathsf{HS}_3$, we introduce a new relation, which we call <em>intersect</em>. In general, given any subset $S \subseteq \{ X, \overline{X} \mid X \in \{L,A,O,E,D,B\}\}$, one can define the relation:</p>
+
+\[R_S = \bigvee_{X \in S} R_X \lor \bigvee_{\overline{X} \in S} R_{\overline{X}}.\]
+
+<p>Therefore, the relation intersect is defined as:</p>
+
+\[I = A \lor \overline{A} \lor O \lor \overline{O} \lor E \lor \overline{E} \lor D \lor \overline{D} \lor B \lor \overline{B}.\]
+
+<p>Well formed $\mathsf{HS}_3$ formulas can be recursively derived from the same $\mathsf{HS}$ grammar when $X \in \{L,I\}$. The semantics of $\mathsf{HS}_3$ are defined similarly to those of $\mathsf{HS}$ with respect to the relation intersect.</p>
+
+<p>Two important results have been proven in <d-cite key="MUNOZVELASCO20191"></d-cite>. On the one hand, given a finitely satisfiable formula $\varphi$ in $\mathsf{HS}_3$, then it is satisfied on a model $M = \langle \mathbb{I}(\mathbb{D}), V \rangle$ whose domain $\mathbb{D}$ cardinality is bounded by:</p>
+
+\[\\|\varphi\\| \cdot 2^{\\|\varphi\\| \cdot \mathrm{log}(\\|\varphi\\|)} \cdot 2^{\\|\varphi\\|^2 \cdot \mathrm{log}(4 \cdot \\|\varphi\\| + 1)} \cdot 2^{\\|\varphi\\|^2} = 2^{O(\\|\varphi\\|^3)}.\]
+
+<p>On the other hand, the SAT problem for $\mathsf{HS}_3$ in the finite case, in the case of natural numbers, in the case of the integers, and in the case of discrete liner orders is $PSpace$-complete. Before concluding, we add the last piece to our “puzzle”:</p>
+
+\[\mathsf{PL} \prec \mathsf{ML} \prec \mathsf{LTL} \prec \mathsf{HS}_3 \prec \mathsf{HS} \prec \mathsf{FOL}.\]
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/blog/2020/temporal-logics/logics.png" />
+    </div>
+</div>
+
+<div class="caption">
+    Representation of the presented logics in terms of expressive power and computational power marking the decidability border.
+</div>
+
+<h2 id="conclusions">Conclusions</h2>
+
+<p>In this presentation, we have made a journey through some of the (classical and non-classical) logics used in Artificial Intelligence focusing on their SAT problem. Some of these logics are well-known in the literature (e.g., $\mathsf{PL}$, $\mathsf{LTL}$), but others, such as $\mathsf{HS}$, are less studied. One of the goals of this presentation was to give a quick overview of some of these logics without going to deep with the mathematical details.</p>
+
+<p>The satisfiability problem of logics is among the most studied problems in theoretical computer science. Another well-studied problem is the <em>Model Checking</em><d-cite key="Clarke:2000:MC:332656"></d-cite> (MC, for short) problem and a great effort has been made in the last decades in addressing such problem, but the study of such problem is beyond the scope of this presentation.</p>
+
+
+      </d-article>
+
+      <d-appendix>
+        <d-footnote-list></d-footnote-list>
+        <d-citation-list></d-citation-list>
+      </d-appendix>
+      
+      
+      <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname  = 'Eduard';
+        var disqus_identifier = '/blog/2020/temporal-logics';
+        var disqus_title      = "A gentle introduction to (Temporal) Logics";
+        (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      
+
+    </div>
+
+    <!-- Footer -->
+
+    
+<footer class="fixed-bottom">
+  <div class="container mt-0">
+    &copy; Copyright 2020-2021 Eduard Ionel STAN.
+    <br>Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme using <a href="https://github.com/mathjax/MathJax">MathJax</a>. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
+    
+    Last updated: February 26, 2021.
+    
+  </div>
+</footer>
+
+
+
+  </body>
+
+  <!-- Load Core and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.0/umd/popper.min.js" integrity="sha256-OH05DFHUWzr725HmuHo3pnuvUUn+TJuj8/Qz9xytFEw=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.17.0/js/mdb.min.js"  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+<!-- Code Syntax Highlighting -->
+<link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css" />
+
+
+
+
+<!-- Load MathJax -->
+<script>
+MathJax = {
+  tex: {
+    tags: 'ams'
+  }
+};
+</script>
+<script src="/assets/js/mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+
+
+
+<!-- Load Mansory & imagesLoaded -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+<!-- Project Cards Layout -->
+<script type="text/javascript">
+  // Init Masonry
+  var $grid = $('.grid').masonry({
+    gutter: 10,
+    horizontalOrder: true,
+    itemSelector: '.grid-item',
+  });
+  // layout Masonry after each image loads
+  $grid.imagesLoaded().progress( function() {
+    $grid.masonry('layout');
+  });
+</script>
+
+
+
+<!-- Enable Tooltips -->
+<script type="text/javascript">
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+
+
+
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-175560702-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+
+  <d-bibliography src="/assets/bibliography/2020/temporal-logics.bib">
+  </d-bibliography>
+
+</html>
